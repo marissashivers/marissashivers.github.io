@@ -14,7 +14,9 @@ More information to come...
 View on [Github](https://github.com/marissashivers/Budget-Tracker).
 
 ### Campus Maps (Hack K-State 2019)
+<p style="text-align: center;">
 ![Campus Maps Devpost card](https://i.imgur.com/kq05zMC.png)
+</p>
 
 Technologies used: Google Cloud Platform, Django.
 
