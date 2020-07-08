@@ -2,169 +2,215 @@
 layout: default
 ---
 
-<div class="timeline">
-  <ul>
-    <li>
-      <div class="content">
-        <h3>Event 1</h3>
-        <p>Event 1 Description</p>
+<div class="page">
+  <div class="timeline">
+    <div class="timeline__group">
+      <span class="timeline__year">2008</span>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">2</span>
+          <span class="timeline__month">Feb</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and works as his assistant.</p>
+          </div>
+        </div>
       </div>
-      <div class="point"></div>
-      <div class="date">
-        <h4>January 2020</h4>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">1</span>
+          <span class="timeline__month">Sept</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me</p>
+          </div>
+        </div>
       </div>
-    </li>
-    <li>
-      <div class="content">
-        <h3>Event 2</h3>
-        <p>Event 2 Description</p>
+    </div>
+    <div class="timeline__group">
+      <span class="timeline__year">2014</span>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">14</span>
+          <span class="timeline__month">Jul</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Travels to France, Italy, Spain, and Peru. After completing fashion editorial in Lima, prolongs stay to make portraits of local people in a daylight studio</p>
+          </div>
+        </div>
       </div>
-      <div class="point"></div>
-      <div class="date">
-        <h4>July 2019</h4>
+    </div>
+    <div class="timeline__group">
+      <span class="timeline__year">2016</span>
+      <div class="timeline__box">
+        <div class="timeline__date">
+          <span class="timeline__day">28</span>
+          <span class="timeline__month">Aug</span>
+        </div>
+        <div class="timeline__post">
+          <div class="timeline__content">
+            <p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
+          </div>
+        </div>
       </div>
-    </li>
-    <li>
-      <div class="content">
-        <h3>Event 3</h3>
-        <p>Event 3 Description</p>
-      </div>
-      <div class="point"></div>
-      <div class="date">
-        <h4>March 2019</h4>
-      </div>
-    </li>
-  </ul>
+    </div>
+  </div>
+</div>
+<div class="linkedin">
+  <div class="linkedin__container">
+    <p class="linkedin__text">I'm looking for my fans which I'll give away everything I know. If you're interested then 👉 <a href="https://www.patreon.com/posts/introduction-to-34774556" class="linkedin__link" rel="noopener noreferrer" target="_blank">join to me on Patreon!</a></p>
+  </div>
 </div>
 
+
 <style>
- .timeline {
+  /* Import */
+
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
+
+/* Variables */
+
+@background: white;
+
+@color-primary: #004ffc;
+@color-light: white;
+@color-dim: #6c6d6d;
+@spacing: 50px;
+@radius: 4px;
+
+@date: 120px;
+@dotborder: 4px;
+@dot: 11px;
+@line: 4px;
+
+@font-title: 'Saira', sans-serif;
+@font-text: 'Chivo', sans-serif;
+
+/* Base */
+
+body {
+  background: @background;
+  font-size: 16px;
+}
+
+p {
+  font-weight: 300;
+}
+
+a { 
+  color: @color-dim;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: .3em;
+  font-size: .6em;
+  font-weight: 400;
+  background: #252727;
+  padding: .3rem 1rem;
+  margin: 1.9rem 0 0 0;
+  float: right;
+}
+
+a:hover { 
+  color: @color-light;
+  background: @color-primary;
+  border-bottom: .35em solid black;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1 {
+ font-family: @font-title;
+ letter-spacing: 1.5px;
+ color: @color-light;  
+ font-weight: 400;
+ font-size: 2.4em;
+}
+
+#timeline-content {
+  margin-top: @spacing;
+  text-align: center;  
+}
+
+/* Timeline */
+
+.timeline {
+  border-left: @line solid @color-primary;
+  border-bottom-right-radius: @radius;
+  border-top-right-radius: @radius;    
+  background: fade(@color-light, 3%);
+  color: fade(white, 80%);
+  font-family: @font-text;  
+  margin: @spacing auto;  
+  letter-spacing: 0.5px;   
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;   
+  padding: @spacing;   
+  list-style: none;
+  text-align: left;  
+  font-weight: 100;  
+  max-width: 30%; 
+  
+  h1 {
+   font-family: @font-title;
+   letter-spacing: 1.5px;
+   font-weight: 100;
+   font-size: 1.4em;    
+  }
+  
+  h2, h3 {
+   font-family: @font-title;
+   letter-spacing: 1.5px;
+   font-weight: 400;
+   font-size: 1.4em;
+  }
+  
+  .event {
+    border-bottom: 1px dashed fade(@color-light, 10%);
+    padding-bottom: (@spacing * 0.5);
+    margin-bottom: @spacing;  
     position: relative;
-    margin: 0 auto;
-    width: 90%;
-    
-}
 
-.timeline ul li {
-    margin-bottom: 50px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.point {
-    min-width: 20px;
-    height: 20px;
-    background-color: #be9fe1;
-    border-radius: 100%;
-    z-index: 2;
-    border: 3px #333333 solid;
-    position: relative;
-    left: 1px;
-}
-
-.timeline ul li .content {
-    width: 50%;
-    padding: 0 20px;
-}
-
-.timeline ul li:nth-child(odd) .content {
-    padding-left: 0;
-}
-
-.timeline ul li:nth-child(odd) .date {
-    padding-right: 0;
-}
-
-.timeline ul li:nth-child(even) .content {
-    padding-right: 0;
-}
-
-.timeline ul li:nth-child(even) .date {
-    padding-left: 0;
-}
-
-.timeline ul li .date {
-    width: 50%;
-    padding: 0 20px;
-    font-weight: normal;
-}
-
-.timeline ul li .date h4 {
-    background-color: #e1ccec;
-    width: 100px;
-    text-align: center;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.timeline ul li .content h3 {
-    padding: 10px 20px;
-    background-color: #be9fe1;
-    margin-bottom: 0;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.timeline ul li .content p {
-    padding: 10px 20px;
-    background-color: #e1d9ec;
-    margin-top: 0;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.timeline ul li:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.timeline ul li:nth-child(even) .date h4 {
-    float: right
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 3px;
-    left: 50%;
-    background-color: #333333;
-}
- 
- @media (max-width: 800px) {
-    .point {
-        min-width: 15px;
-        height: 15px;
+    &:last-of-type { 
+      padding-bottom: 0;
+      margin-bottom: 0; 
+      border: none;      
     }
 
-    html, body {
-        font-size: 15px;
+    &:before, &:after {
+      position: absolute;
+      display: block;
+      top: 0;
     }
 
+    &:before {
+      left: (((@date * 0.6) + @spacing + @line + @dot + (@dotborder * 2)) * 1.5) * -1;    
+      color: fade(@color-light, 40%);    
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;    
+      font-size: 0.9em;
+      min-width: @date;
+      font-family: @font-title;
+    }
+
+    &:after {
+      box-shadow: 0 0 0 @dotborder fade(@color-primary,100%);    
+      left: (@spacing + @line + (@dot * 0.35)) * -1;        
+      background: lighten(@background,5%);    
+      border-radius: 50%;  
+      height: @dot;
+      width: @dot;
+      content: "";
+      top: 5px;
+    }
+  }
 }
-
-@media (max-width: 650px) {
-    html, body {
-        font-size: 14px;
-    }
-    
-    .point {
-        min-width: 12px;
-        height: 12px;
-    }
-
-}
-
-@media (max-width: 450px) {
-    html, body {
-        font-size: 10px;
-    }
-
-    p {
-        padding: 10px !important;
-    }
-}
-</style
+  
+</style>
