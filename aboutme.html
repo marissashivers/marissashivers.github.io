@@ -2,215 +2,338 @@
 layout: default
 ---
 
-<div class="page">
-  <div class="timeline">
-    <div class="timeline__group">
-      <span class="timeline__year">2008</span>
-      <div class="timeline__box">
-        <div class="timeline__date">
-          <span class="timeline__day">2</span>
-          <span class="timeline__month">Feb</span>
-        </div>
-        <div class="timeline__post">
-          <div class="timeline__content">
-            <p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and works as his assistant.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline__box">
-        <div class="timeline__date">
-          <span class="timeline__day">1</span>
-          <span class="timeline__month">Sept</span>
-        </div>
-        <div class="timeline__post">
-          <div class="timeline__content">
-            <p>Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="timeline__group">
-      <span class="timeline__year">2014</span>
-      <div class="timeline__box">
-        <div class="timeline__date">
-          <span class="timeline__day">14</span>
-          <span class="timeline__month">Jul</span>
-        </div>
-        <div class="timeline__post">
-          <div class="timeline__content">
-            <p>Travels to France, Italy, Spain, and Peru. After completing fashion editorial in Lima, prolongs stay to make portraits of local people in a daylight studio</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="timeline__group">
-      <span class="timeline__year">2016</span>
-      <div class="timeline__box">
-        <div class="timeline__date">
-          <span class="timeline__day">28</span>
-          <span class="timeline__month">Aug</span>
-        </div>
-        <div class="timeline__post">
-          <div class="timeline__content">
-            <p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<html>
+
+<div id="timeline-content">
+    <h1>Timeline</h1>
+
+    <ul class="timeline">
+        <li class="event" data-date="65Million B.C.">
+            <h3>Dinosaurs Roamed the Earth</h3>
+            <p>RAWWWWWWRRR 🐢🦂</p>
+        </li>
+        <li class="event" data-date="2005">
+            <h3>Creative Component Launched</h3>
+            <p>"We can be all things to all people!" 📣</p>
+        </li>
+        <li class="event" id="date" data-date="2009">
+            <h3>Squareflair was Born</h3>
+            <p></p>
+            <p>"We can be all things to Squarespace users!" 📣</p>
+        </li>
+
+        <li class="event" data-date="November 15, 2018">
+
+            <h3>Squareflair Today</h3>
+
+            <p>"We design and build from scratch!" 📣
+                <p/>
+                <p>When we say <em><strong>100% custom</strong></em> we mean it— and we build all sites on the Squarespace Developer platform.
+                    <p/>
+                    <p>Did you know that all of our pixels are hand-forged from the rarest of subpixels grown and harvested in the <em>Nerd Forest</em>? <br>🤜💥🤛</p>
+
+                    <p><strong>Our success can be measured by lives and brands enhanced by 9+ years of 100% Squarespace-focused service!</strong></p>
+
+        </li>
+    </ul>
 </div>
-<div class="linkedin">
-  <div class="linkedin__container">
-    <p class="linkedin__text">I'm looking for my fans which I'll give away everything I know. If you're interested then 👉 <a href="https://www.patreon.com/posts/introduction-to-34774556" class="linkedin__link" rel="noopener noreferrer" target="_blank">join to me on Patreon!</a></p>
-  </div>
-</div>
+
+</html>
 
 
 <style>
-  /* Import */
-
-@import url('https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800');
-
-/* Variables */
-
-@background: white;
-
-@color-primary: #004ffc;
-@color-light: white;
-@color-dim: #6c6d6d;
-@spacing: 50px;
-@radius: 4px;
-
-@date: 120px;
-@dotborder: 4px;
-@dot: 11px;
-@line: 4px;
-
-@font-title: 'Saira', sans-serif;
-@font-text: 'Chivo', sans-serif;
-
-/* Base */
-
-body {
-  background: @background;
-  font-size: 16px;
-}
-
-p {
-  font-weight: 300;
-}
-
-a { 
-  color: @color-dim;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  letter-spacing: .3em;
-  font-size: .6em;
-  font-weight: 400;
-  background: #252727;
-  padding: .3rem 1rem;
-  margin: 1.9rem 0 0 0;
-  float: right;
-}
-
-a:hover { 
-  color: @color-light;
-  background: @color-primary;
-  border-bottom: .35em solid black;
-}
-
-strong {
-  font-weight: 600;
-}
-
-h1 {
- font-family: @font-title;
- letter-spacing: 1.5px;
- color: @color-light;  
- font-weight: 400;
- font-size: 2.4em;
-}
-
-#timeline-content {
-  margin-top: @spacing;
-  text-align: center;  
-}
-
-/* Timeline */
-
-.timeline {
-  border-left: @line solid @color-primary;
-  border-bottom-right-radius: @radius;
-  border-top-right-radius: @radius;    
-  background: fade(@color-light, 3%);
-  color: fade(white, 80%);
-  font-family: @font-text;  
-  margin: @spacing auto;  
-  letter-spacing: 0.5px;   
-  position: relative;
-  line-height: 1.4em;
-  font-size: 1.03em;   
-  padding: @spacing;   
-  list-style: none;
-  text-align: left;  
-  font-weight: 100;  
-  max-width: 30%; 
-  
-  h1 {
-   font-family: @font-title;
-   letter-spacing: 1.5px;
-   font-weight: 100;
-   font-size: 1.4em;    
-  }
-  
-  h2, h3 {
-   font-family: @font-title;
-   letter-spacing: 1.5px;
-   font-weight: 400;
-   font-size: 1.4em;
-  }
-  
-  .event {
-    border-bottom: 1px dashed fade(@color-light, 10%);
-    padding-bottom: (@spacing * 0.5);
-    margin-bottom: @spacing;  
-    position: relative;
-
-    &:last-of-type { 
-      padding-bottom: 0;
-      margin-bottom: 0; 
-      border: none;      
+    /* Import */
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: italic;
+        font-weight: 300;
+        src: local('Chivo Light Italic'), local('Chivo-LightItalic'), url(https://fonts.gstatic.com/s/chivo/v11/va9D4kzIxd1KFrBteUp9gK_uQQ.ttf) format('truetype');
     }
-
-    &:before, &:after {
-      position: absolute;
-      display: block;
-      top: 0;
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: italic;
+        font-weight: 400;
+        src: local('Chivo Italic'), local('Chivo-Italic'), url(https://fonts.gstatic.com/s/chivo/v11/va9G4kzIxd1KFrBtceFfkA.ttf) format('truetype');
     }
-
-    &:before {
-      left: (((@date * 0.6) + @spacing + @line + @dot + (@dotborder * 2)) * 1.5) * -1;    
-      color: fade(@color-light, 40%);    
-      content: attr(data-date);
-      text-align: right;
-      font-weight: 100;    
-      font-size: 0.9em;
-      min-width: @date;
-      font-family: @font-title;
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: italic;
+        font-weight: 700;
+        src: local('Chivo Bold Italic'), local('Chivo-BoldItalic'), url(https://fonts.gstatic.com/s/chivo/v11/va9D4kzIxd1KFrBteVp6gK_uQQ.ttf) format('truetype');
     }
-
-    &:after {
-      box-shadow: 0 0 0 @dotborder fade(@color-primary,100%);    
-      left: (@spacing + @line + (@dot * 0.35)) * -1;        
-      background: lighten(@background,5%);    
-      border-radius: 50%;  
-      height: @dot;
-      width: @dot;
-      content: "";
-      top: 5px;
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: italic;
+        font-weight: 900;
+        src: local('Chivo Black Italic'), local('Chivo-BlackItalic'), url(https://fonts.gstatic.com/s/chivo/v11/va9D4kzIxd1KFrBteWJ4gK_uQQ.ttf) format('truetype');
     }
-  }
-}
-  
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Chivo Light'), local('Chivo-Light'), url(https://fonts.gstatic.com/s/chivo/v11/va9F4kzIxd1KFrjDY_Z4sKg.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Chivo Regular'), local('Chivo-Regular'), url(https://fonts.gstatic.com/s/chivo/v11/va9I4kzIxd1KFrBoQeY.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Chivo Bold'), local('Chivo-Bold'), url(https://fonts.gstatic.com/s/chivo/v11/va9F4kzIxd1KFrjTZPZ4sKg.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Chivo';
+        font-style: normal;
+        font-weight: 900;
+        src: local('Chivo Black'), local('Chivo-Black'), url(https://fonts.gstatic.com/s/chivo/v11/va9F4kzIxd1KFrjrZvZ4sKg.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 100;
+        src: local('Saira Thin'), local('Saira-Thin'), url(https://fonts.gstatic.com/s/saira/v4/mem-Ya2wxmKQyNFEfZE1Ug.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 200;
+        src: local('Saira ExtraLight'), local('Saira-ExtraLight'), url(https://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNHobIYScr0.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Saira Light'), local('Saira-Light'), url(https://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNGMb4YScr0.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Saira Regular'), local('Saira-Regular'), url(https://fonts.gstatic.com/s/saira/v4/memwYa2wxmKQyNknTZY.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Saira Medium'), local('Saira-Medium'), url(https://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNHUboYScr0.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Saira SemiBold'), local('Saira-SemiBold'), url(https://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNH4aYYScr0.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Saira Bold'), local('Saira-Bold'), url(https://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNGcaIYScr0.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Saira ExtraBold'), local('Saira-ExtraBold'), url(https://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNGAa4YScr0.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 100;
+        src: local('Saira ExtraCondensed Thin'), local('SairaExtraCondensed-Thin'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFsOHYr-vcC7h8MklGBkrvmUG9rbpkisrTri3j2_Co.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 200;
+        src: local('Saira ExtraCondensed ExtraLight'), local('SairaExtraCondensed-ExtraLight'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrJ2nh2wpk.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Saira ExtraCondensed Light'), local('SairaExtraCondensed-Light'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrQ2rh2wpk.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Saira ExtraCondensed Regular'), local('SairaExtraCondensed-Regular'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFiOHYr-vcC7h8MklGBkrvmUG9rbpkisrTj6Ejx.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Saira ExtraCondensed Medium'), local('SairaExtraCondensed-Medium'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrG2vh2wpk.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Saira ExtraCondensed SemiBold'), local('SairaExtraCondensed-SemiBold'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrN2zh2wpk.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Saira ExtraCondensed Bold'), local('SairaExtraCondensed-Bold'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrU23h2wpk.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Saira Extra Condensed';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Saira ExtraCondensed ExtraBold'), local('SairaExtraCondensed-ExtraBold'), url(https://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTrT27h2wpk.ttf) format('truetype');
+    }
+    /* Variables */
+    /* Base */
+    
+    body {
+        background: #252827;
+        font-size: 16px;
+    }
+    
+    p {
+        font-weight: 300;
+    }
+    
+    a {
+        color: #6c6d6d;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        letter-spacing: 0.3em;
+        font-size: 0.6em;
+        font-weight: 400;
+        background: #252727;
+        padding: 0.3rem 1rem;
+        margin: 1.9rem 0 0 0;
+        float: right;
+    }
+    
+    a:hover {
+        color: white;
+        background: #004ffc;
+        border-bottom: 0.35em solid black;
+    }
+    
+    strong {
+        font-weight: 600;
+    }
+    
+    h1 {
+        font-family: 'Saira', sans-serif;
+        letter-spacing: 1.5px;
+        color: white;
+        font-weight: 400;
+        font-size: 2.4em;
+    }
+    
+    #timeline-content {
+        margin-top: 50px;
+        text-align: center;
+    }
+    /* Timeline */
+    
+    .timeline {
+        border-left: 4px solid #004ffc;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        background: rgba(255, 255, 255, 0.03);
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Chivo', sans-serif;
+        margin: 50px auto;
+        letter-spacing: 0.5px;
+        position: relative;
+        line-height: 1.4em;
+        font-size: 1.03em;
+        padding: 50px;
+        list-style: none;
+        text-align: left;
+        font-weight: 100;
+        max-width: 30%;
+    }
+    
+    .timeline h1 {
+        font-family: 'Saira', sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: 100;
+        font-size: 1.4em;
+    }
+    
+    .timeline h2,
+    .timeline h3 {
+        font-family: 'Saira', sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1.4em;
+    }
+    
+    .timeline .event {
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    
+    .timeline .event:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+    
+    .timeline .event:before,
+    .timeline .event:after {
+        position: absolute;
+        display: block;
+        top: 0;
+    }
+    
+    .timeline .event:before {
+        left: -217.5px;
+        color: rgba(255, 255, 255, 0.4);
+        content: attr(data-date);
+        text-align: right;
+        font-weight: 100;
+        font-size: 0.9em;
+        min-width: 120px;
+        font-family: 'Saira', sans-serif;
+    }
+    
+    .timeline .event:after {
+        box-shadow: 0 0 0 4px #004ffc;
+        left: -57.85px;
+        background: #313534;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        content: "";
+        top: 5px;
+    }
 </style>
